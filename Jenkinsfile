@@ -11,9 +11,9 @@ pipeline {
         sh './gradlew test'
       }
     }
-    stage('mail') {
+    stage('gradelsonar') {
       steps {
-        emailext(subject: 'log ', attachLog: true, body: 'voici les resultat du travail jenkins', from: 'vincent@localhost', to: 'vincidevweb@gmail.com')
+        sh './gradelew sonarqube'
       }
     }
   }
