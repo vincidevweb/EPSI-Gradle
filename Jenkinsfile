@@ -6,5 +6,10 @@ pipeline {
         sh './gradlew bootJar'
       }
     }
+    stage('test uitaire') {
+      steps {
+        sh './gradlew test'
+      }
+    }
   }
 }
