@@ -13,7 +13,7 @@ pipeline {
     }
     stage('gradelsonar') {
       steps {
-        sh './gradelew sonarqube'
+        sh './gradlew sonarqube'
       }
     }
   }
